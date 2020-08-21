@@ -1,0 +1,36 @@
+<div class="recap">
+  <h1>Récapitulatif de votre commande</h1>
+
+  <div class="intitules">
+    <span><b>Prénom :</b> {{prenom}}</span>
+    <br />
+    <br />
+    <span><b>Produits commandés :</b></span>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Id du produit</th>
+        <th>Quantité</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of this.articles">
+        <td>{{ item.id }}</td>
+        <td>{{ item.qte }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <div class="interac">
+    <img src="{{lienInterac}}" alt="logo interac" />
+    <p class="interacText">
+      Afin de valider votre commande nous vous remercions
+      <br />de faire parvenir votre virement via Interac à l'adresse :
+      <a href="mailto:qi_paiement@qi.ca"><br />qi_paiement@qi.ca</a>
+      <br />
+      <br />La réponse à la question Interac devra être : QIBOUTIQUE
+    </p>
+  </div>
+</div>

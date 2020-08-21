@@ -1,0 +1,118 @@
+/* Page forumulaire*/
+.formulaire {
+  text-align: center;
+  padding: 50px;
+  margin: auto;
+  margin-bottom: 300px;
+}
+h1 {
+  background-color: #203864;
+  padding: 1px;
+  margin: auto;
+  margin-bottom: 50px;
+  color: lightgrey;
+  text-align: center;
+}
+
+form {
+  border-style: double;
+  background-color: #ccddff;
+  padding: 30px;
+  text-align: center;
+  display: inline-block;
+}
+
+.form-group input {
+  font-style: italic;
+  text-align: center;
+}
+
+.boutons {
+  margin:30px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  border-style: double;
+  padding: 10px;
+  margin: auto;
+  width: 200px;
+  background-color: white;
+  color: #203864;
+}
+
+
+/* Adaptation du site a 850px de large*/
+@media all and (max-width: 850px) {
+  .articles {
+    width: 97%;
+    margin: 0px;
+  }
+
+  .titreindex {
+    margin: 0px;
+    width: 91%;
+  }
+
+  .interac {
+    flex-direction: column;
+  }
+
+  .tableprep {
+    width: 75%;
+  }
+}
+
+/* Adaptation du site a 550px de large*/
+@media all and (max-width: 550px) {
+  .banner ul {
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .titreindex {
+    width: 88.5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .articles ul {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .formulaire {
+    padding: 0px;
+  }
+
+  footer ul {
+    flex-direction: column;
+  }
+
+  .tableprep {
+    width: 100%;
+  }
+
+  .banner ul {
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .interac img {
+    width: 100px;
+    padding: 5%;
+  }
+
+  .interacText {
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    padding: 5%;
+  }
+}

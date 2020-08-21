@@ -1,27 +1,32 @@
-# Qi
+# INF3190 Session été 2020 TP2
+# Cas Québec Informatique version Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
+### Etudiant:
 
-## Development server
+ - **Nom:** NINEY Alexandre
+ - **Code permanent :** NINA25118008
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Sommaire
 
-## Code scaffolding
+ - Contexte du projet
+ - Lancement du site
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Contexte du projet
 
-## Running unit tests
+En raison de la pandémie de Covid-19, la boutique de conseil et détail Québec  Informatique perd un revenu important du à sa fermeture.<br/>
+Afin de remédier à cela, son gérant souhaite ouvrir un site Internet permettant à ses clients de commander et payer leurs produits en ligne.<br/>
+Cette version du site se fera sous Angular.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Lancement du site Internet
 
-## Running end-to-end tests
+Pour visualiser le site:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+ - Tout d'abord dans un terminal shell, accédez au répertoire `/qi` de l'application.
 
-## Further help
+ - Lancez la commande `npm install`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ - Puis rentrez la commande : `ng serve` pour lancer l'application.
+
+ - Enfin, avec votre fureteur, rentrez l'URL suivante:[http://localhost:4211/](http://localhost:4211/)

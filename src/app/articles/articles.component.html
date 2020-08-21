@@ -1,0 +1,14 @@
+  <h1 class="titreindex">Québec Informatique<br><br>Votre boutique<br>Maintenant sur Internet !</h1>
+  <div class="container">
+    <div class="row" *ngFor="let art of articles">
+      <img class ="col-md-2" src='{{"../assets/images/" + art.image }}' alt="{{ art.image }}">
+      <ul class ="col-md-7">
+        <span class="nom">{{ art.nom }}</span>
+        <li>Description : {{ art.description }} </li>
+        <li>Marque : {{ art.marque }} </li>
+        <li>Id : {{ art.id }} </li>
+      </ul>
+      <span id="prix" class ="col-md-2">Prix : {{ art.prix }} $</span>
+    </div>
+  </div>
+

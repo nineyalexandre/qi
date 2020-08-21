@@ -1,0 +1,80 @@
+/* Page index et des articles*/
+.titreindex {
+  border-style: groove;
+  text-align: center;
+  padding: 20px;
+  margin-left: 17%;
+  margin-right: 17%;
+  background-color: #ffe7b6;
+  color: #203864;
+}
+
+.row {
+  border-style: double;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px;
+  color: #203864;
+  background-color: #ccddff;
+}
+
+ul {
+  border-style: double;
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: white;
+  margin: auto;
+}
+
+li {
+  margin-left: 20px;
+  padding: 0px;
+}
+
+img {
+  margin: auto;
+  padding: 0px;
+}
+
+  .nom {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+#prix {
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  border-style: double;
+  background-color: white;
+}
+
+
+/* Adaptation du site a 850px de large*/
+@media all and (max-width: 850px) {
+  .titreindex {
+    margin: 0px;
+    width: 91%;
+  }
+
+}
+
+/* Adaptation du site a 550px de large*/
+@media all and (max-width: 550px) {
+
+  .titreindex {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+}

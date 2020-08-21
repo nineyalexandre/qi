@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'qi';
+  title = 'Qi informatique';
+  lienLogo = "assets/images/logo.GIF";
+  logoUqam = "assets/images/UQAM.jpg";
 }

@@ -1,0 +1,41 @@
+
+  <div class="formulaire">
+    <h1>Suivi de commandes</h1>
+    <div class="form">
+      <div class="form-group">
+        <label>
+          Numéro de commande 
+        </label>
+        <input type="number" required="required" min="1" placeholder='Commande' [formControl]="numcde" ngModel>
+      </div>
+      <br>
+      <p>
+        <button (click)="afficher()">Chercher</button>
+      </p>
+    </div>
+  </div>
+
+  <div class="tableprep">
+    <h3>Résultats</h3>
+    <div *ngIf="affResultat">
+      <table>
+        <thead>
+          <tr>
+            <th>Numero de commande</th>
+            <th>Id du produit</th>
+            <th>Prénom</th>
+            <th>Ramassage</th>
+            <th>Statut</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let cde of commandes">
+          <tr *ngIf="cde.numero == numcde.value">
+            <td>{{ cde.numero }}</td>
+            <td>{{ cde.id }}</td>
+            <td>{{ cde.prenom }}</td>
+            <td>{{ cde.ramassage }}</td>
+            <td>{{ cde.statut }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>

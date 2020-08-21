@@ -1,0 +1,45 @@
+<div class="formulaire">
+  <h1>Formulaire de commande</h1>
+  <form [formGroup]="resumecde" (ngSubmit)="onSubmit()">
+
+    <label>
+      Prenom:
+      <input type="text" required="required" placeholder='Prénom' formControlName="prenom">
+    </label>
+
+    <br>
+
+    <label>
+      Id:<input class="input" id="id" list="ids" required="required" placeholder="-- Selectionner id --" formControlName="id">
+      <datalist id="ids">
+        <option value="A00001"></option>
+        <option value="A00002"></option>
+        <option value="A00003"></option>
+        <option value="A00004"></option>
+        <option value="A00005"></option>
+      </datalist>
+    </label>
+
+    <br>
+
+    <label>
+      Quantité:
+      <input type="number" min="1" placeholder='Nombre d article' formControlName="qte">
+    </label>
+
+    <br>
+
+  </form>
+  <div>
+    <button (click)="ajoutPanier()" class="boutons">Ajouter un article</button>
+    <button (click)="onSubmit()" class="boutons">Finaliser la commande</button>
+  </div>
+
+  <h1>Produits ajoutés</h1>
+  <ul *ngFor="let item of this.panier">
+    <li>Id : {{ item.id }} </li>
+    <li>Quantité : {{ item.qte }} </li>
+  </ul>
+</div>
+
+

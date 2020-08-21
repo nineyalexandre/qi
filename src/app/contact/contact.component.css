@@ -1,0 +1,41 @@
+/* Page Gerant*/
+
+h1 {
+  background-color: #203864;
+  padding: 1px;
+  margin: auto;
+  margin-bottom: 50px;
+  color: lightgrey;
+  text-align: center;
+}
+
+.gerant {
+  background-color: #e0e0eb;
+  font-family: Arial;
+  padding: 20px;
+}
+.gerant img {
+  margin: auto;
+  width: 150px;
+}
+
+.gerant h3, p {
+  margin-left: 150px;
+  margin-right: 50px;
+  text-align: justify;
+}
+
+
+
+
+/* Page Contact */
+.contact {
+  background-color: #e0e0eb;
+  font-family: Arial;
+  padding: 20px;
+}
+
+  .contact img {
+    padding: 50px;
+  }
+

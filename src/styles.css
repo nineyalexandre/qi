@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+
+/* Ensemble des body du site*/
+body {
+  background-color: #e0e0eb;
+  font-family: Arial;
+}
+

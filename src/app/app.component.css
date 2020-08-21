@@ -1,0 +1,353 @@
+
+
+/* Barre de navigation*/
+.banner ul {
+  list-style-type: none;
+  background-color: #203864;
+  width: 100%;
+  font-family: Arial;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.banner img {
+  float: left;
+  margin: auto;
+  padding: 0px;
+  margin: 0px;
+  width: 100px;
+}
+
+.banner li {
+  margin: auto;
+  margin-left: 0;
+  font-size: 30px;
+  width: 250px;
+  text-align: center;
+}
+
+  .banner li :hover {
+    background-color: grey;
+  }
+
+.link {
+  color: lightgrey;
+  text-decoration: none;
+  padding: 30px;
+  display: block;
+}
+
+/* Page Gerant*/
+.gerant img {
+  float: left;
+  width: 200px;
+}
+
+.gerant h3, p {
+  margin-left: 250px;
+  margin-right: 50px;
+  text-align: justify;
+}
+
+.gerant header {
+  background-color: #203864;
+  width: 100%;
+  padding: 1px;
+  margin-bottom: 50px;
+  color: lightgrey;
+}
+
+  .gerant header h1 {
+    margin-left: 20px;
+  }
+
+/* Page Contact */
+.contact {
+  margin-bottom: 250px;
+}
+
+  .contact img {
+    padding: 50px;
+  }
+
+/* Page index et des articles*/
+.titreindex {
+  border-style: groove;
+  text-align: center;
+  padding: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: #ffe7b6;
+  color: #203864;
+}
+
+.articles {
+  display: flex;
+  border-style: double;
+  margin-left: 25%;
+  margin-right: 25%;
+  flex-direction: column;
+  color: #203864;
+  background-color: #ccddff;
+}
+
+  .articles ul {
+    border-style: double;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: white;
+  }
+
+  .articles li {
+    margin-left: 150px;
+  }
+
+  .articles img {
+    float: left;
+    margin: auto;
+    padding: 0px;
+    width: 100px;
+  }
+
+  .articles .nom {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 140px;
+  }
+
+  .articles .prix {
+    float: right;
+    font-weight: bold;
+    border-style: double;
+    margin: auto;
+    padding: 0px;
+    background-color: #ccddff;
+  }
+
+/* Page forumulaire*/
+.formulaire {
+  text-align: center;
+  padding: 50px;
+  margin: auto;
+  margin-bottom: 300px;
+}
+
+form {
+  border-style: double;
+  background-color: #ccddff;
+  padding: 30px;
+  text-align: center;
+  display: inline-block;
+}
+
+.form-group {
+  font-weight: bold;
+  display: flex;
+  padding: 10px;
+  width: 300px;
+}
+
+  .form-group input {
+    margin-left: auto;
+    font-style: italic;
+    text-align: center;
+  }
+
+form button {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Pied de page*/
+footer ul {
+  list-style-type: none;
+  background-color: #203864;
+  width: 100%;
+  height: 70px;
+  font-family: Arial;
+  font-size: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+footer li {
+  margin: auto;
+  margin-left: 0;
+  color: lightgrey;
+  text-decoration: none;
+}
+
+footer img {
+  height: 70px;
+}
+
+.linkfooter {
+  color: lightgrey;
+  text-decoration: none;
+  font-style: italic;
+}
+
+/* Page commandes*/
+.recap {
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 300px;
+  background-color: #ccddff;
+}
+
+  .recap h1 {
+    text-align: center;
+    padding: 46px;
+  }
+
+  .recap ul {
+    list-style-type: none;
+    border-style: double;
+    padding: 10px;
+    margin: auto;
+    width: 200px;
+    background-color: white;
+    color: #203864;
+  }
+
+  .recap li {
+    margin-left: 20px;
+  }
+
+.interac {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  width: 800px;
+  margin: auto;
+}
+
+  .interac img {
+    width: 100px;
+    padding: 5%;
+  }
+
+  .interac .interacText {
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    padding: 5%;
+  }
+
+/* Page des commandes en preparation*/
+.tableprep {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 650px;
+}
+
+  .tableprep h1 {
+    text-align: center;
+    padding: 46px;
+  }
+
+  .tableprep img {
+    width: 100px;
+  }
+
+  .tableprep table {
+    table-layout: fixed;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #203864;
+    background-color: #ccddff;
+    float: right;
+  }
+
+  .tableprep th {
+    background-color: #203864;
+    color: lightgrey;
+  }
+
+  .tableprep td {
+    padding: 8px;
+  }
+
+  .tableprep tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+/* Adaptation du site a 850px de large*/
+@media all and (max-width: 850px) {
+  .articles {
+    width: 97%;
+    margin: 0px;
+  }
+
+  .titreindex {
+    margin: 0px;
+    width: 91%;
+  }
+
+  .interac {
+    flex-direction: column;
+  }
+
+  .tableprep {
+    width: 75%;
+  }
+}
+
+/* Adaptation du site a 550px de large*/
+@media all and (max-width: 550px) {
+  .banner ul {
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .titreindex {
+    width: 88.5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .articles ul {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .formulaire {
+    padding: 0px;
+  }
+
+  footer ul {
+    flex-direction: column;
+  }
+
+  .tableprep {
+    width: 100%;
+  }
+
+  .banner ul {
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .interac img {
+    width: 100px;
+    padding: 5%;
+  }
+
+  .interacText {
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    padding: 5%;
+  }
+}

@@ -1,0 +1,84 @@
+/* Page paiement*/
+.recap {
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 200px;
+  background-color: #ccddff;
+}
+
+h1 {
+  background-color: #203864;
+  padding: 1px;
+  margin: auto;
+  margin-bottom: 50px;
+  color: lightgrey;
+  text-align: center;
+}
+
+  .recap .intitules {
+    width: 20%;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+
+  .recap table{
+    list-style-type: none;
+    border-style: double;
+    padding: 10px;
+    margin: auto;
+    width: 20%;
+    background-color: white;
+    color: #203864;
+    text-align: center;
+  }
+
+  .recap td {
+    margin-left: 20px;
+  }
+
+.interac {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  width: 800px;
+  margin: auto;
+}
+
+  .interac img {
+    width: 200px;
+    padding: 5%;
+  }
+
+  .interac .interacText {
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    padding: 5%;
+  }
+
+
+
+/* Adaptation du site a 850px de large*/
+@media all and (max-width: 850px) {
+  .interac {
+    flex-direction: column;
+  }
+}
+
+/* Adaptation du site a 550px de large*/
+@media all and (max-width: 550px) {
+
+  .interac img {
+    width: 10%;
+    padding: 0;
+  }
+
+  .interacText {
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    padding: 5%;
+  }
+}
